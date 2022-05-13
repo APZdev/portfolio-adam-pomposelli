@@ -5,90 +5,125 @@ import { Container } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { TextDecrypt } from "../content/TextDecrypt";
 
-import './Works.css';
+import "./Works.css";
 
 // Import ../../assets/recentprojects/
-import Portfolio from '../../assets/recentprojects/react-portfolio.png';
-import Veritru from '../../assets/recentprojects/veritru.png';
-import Lofo from '../../assets/recentprojects/lofo.png';
-import Startup from '../../assets/recentprojects/startup.png';
-import Lacalle from '../../assets/recentprojects/lacalle.png';
+import MatrixCointThumbnail from "../../assets/recentprojects/MatrixCoinThumbnail.png";
+import PolycornFinanceThumbnail from "../../assets/recentprojects/PolycornFinanceThumbnail.png";
+import BabysealNFTThumbnail from "../../assets/recentprojects/BabysealNFTThumbnail.png";
+import BinanceCloneThumbnail from "../../assets/recentprojects/BinanceCloneThumbnail.png";
+import TropicalInteriorThumbnail from "../../assets/recentprojects/TropicalInteriorThumbnail.png";
+import PianoVisualizerThumbnail from "../../assets/recentprojects/PianoVisualizerThumbnail.png";
+import DodgeRThumbnail from "../../assets/recentprojects/DodgeRThumbnail.png";
+import SightReadTrainerThumbnail from "../../assets/recentprojects/SightReadTrainerThumbnail.png";
+import SwitchThumbnail from "../../assets/recentprojects/SwitchThumbnail.png";
 
 const useStyles = makeStyles((theme) => ({
-  main: {
-    maxWidth: '100vw',
-    marginTop: '3em',
-    marginBottom: "auto",
-  },
+    main: {
+        maxWidth: "100vw",
+        marginTop: "3em",
+        marginBottom: "auto",
+    },
 }));
 
 export const Works = () => {
-  const classes = useStyles();
-  const [projects, setProjects] = useState([
-    { 
-      id: 1,
-      title: 'React Portfolio', 
-      description: `Designed and developed a ReactJS portfolio 
-      with fancy 3D animations using Three.js for 
-      the background element.`,
-      alter: 'React Portfolio',
-      image: `${Portfolio}`,
-    },
-    { 
-      id: 2,
-      title: 'VeriTru Project', 
-      description: `An advocacy project website built using
-      MEAN stack with fact-checking tool to promote actions against
-      fake news.`,
-      alter: 'VeriTru Project',
-      image: `${Veritru}`,
-    },
-    { 
-      id: 3,
-      title: 'LoFo Project', 
-      description: `Logistics and Forwarding website built using
-      ReactJS to design and develop its front-end.`,
-      alter: 'LoFo Project',
-      image: `${Lofo}`,
-    },
-    { 
-      id: 4,
-      title: 'Startup Project', 
-      description: `A website portfolio project for the Startup Dev Team
-      built using MEVN stack to demonstrate the CRUD capabilities of the tech stack.`,
-      alter: 'Startup Project',
-      image: `${Startup}`,
-    },
-    { 
-      id: 5,
-      title: 'LaCalle Cafe', 
-      description: `A website project for the La Calle Cafe business
-      built using Wordpress and PHP with integrated SEO tools to help
-      the business ramp up its prospects and lead generation.`,
-      alter: 'Startup Project',
-      image: `${Lacalle}`,
-    },
-  ]);
+    const classes = useStyles();
+    const projects = [
+        {
+            title: "Matrix Coin - Showcase",
+            description: `This website was made using plain HTML | CSS | JS and is deployed on Vercel. It's a showcase website for an official crypto project deployed on Binance Smart Chain.`,
+            alter: "Matrix Coin Showcase",
+            image: `${MatrixCointThumbnail}`,
+            url: "https://matrixcoin-io.vercel.app/",
+        },
+        {
+            title: "Polycorn Finance - DeFi Application",
+            description: `This project was made using React | Web3js | Twitter API and is deployed on Vercel. 
+            It's a DAPP (DeFi Application) designed and developed for an official project that should of been deployed on Polygon Blockchain. 
+            Unfortunately, the project owner ran into issues that forced me to interrupt the development. Therefore, the website is not responsive`,
+            alter: "Matrix Coin Showcase",
+            image: `${PolycornFinanceThumbnail}`,
+            url: "https://polycorn-finance.vercel.app/",
+        },
+        {
+            title: "Babyseal NFT - DeFi Application",
+            description: `This project was made using React | Styled Components | Web3js and is deployed on Vercel. 
+            It's a DAPP (DeFi Application) designed and developed for an official NFT project deployed on Ethereum Blockchain. 
+            This website acts as a Landing page and give the ability to mint the NFT collection directly from the website.`,
+            alter: "Babyseal NFT DeFi Application",
+            image: `${BabysealNFTThumbnail}`,
+            url: "https://baby-seal-website.vercel.app/",
+        },
+        {
+            title: "Binance Clone - Clone",
+            description: `This project was made using React | Redux Toolkit | Typescript | Styled Components and is deployed on Vercel. 
+            This clone is fully responsive. I took advantage of Trading View Widgets to render charts and Google Services to provide an authentication method.`,
+            alter: "Binance Clone - Clone",
+            image: `${BinanceCloneThumbnail}`,
+            url: "https://www.binance.com/en",
+        },
+        {
+            title: "Tropical Interior - E-commerce",
+            description: `This project is powered by the LAMP stack and is deployed on a VPS. 
+            This e-commerce website was developed for a school annual exam. This website include both a front-end application and an admin dashboard.`,
+            alter: "TropicalInterior E-commerce",
+            image: `${TropicalInteriorThumbnail}`,
+            url: "https://tropicalinterior.shop/",
+        },
+        {
+            title: "DodgeR - Mobile Game",
+            description: `This mobile game was developed using the Unity Game Engine in C#. The game is exclusively available on Android and published on Google Play. 
+            This project took advantage of Google Services to power authentication and leaderboard using GoogleAuth and Firebase.`,
+            alter: "DodgeR - Mobile Game",
+            image: `${DodgeRThumbnail}`,
+            url: "https://play.google.com/store/apps/details?id=com.SubwayGames.dodgeR",
+        },
+        {
+            title: "Live Piano Visualizer - Desktop Software",
+            description: `This desktop software was developed using the Unity Game Engine in C# and is available on Itch.io. The software is separated in two categories. 
+            The first is in 2D and render a realtime visual representation of MIDI inputs. The second is a 3D scene with a customizable Grand Piano in a Forest.`,
+            alter: "Live Piano Visualizer - Desktop Software",
+            image: `${PianoVisualizerThumbnail}`,
+            url: "https://apz.itch.io/livepianovisualizer",
+        },
+        {
+            title: "Sight Reading Trainer - Mobile Application",
+            description: `This mobile educational application was developed using the Unity Game Engine in C# and is available exclusively for Android users on Itch.io. 
+            You might be interesed to use this app if you want to improve your sightreading speed when reading music scores.`,
+            alter: "Sight Reading Trainer - Mobile Application",
+            image: `${SightReadTrainerThumbnail}`,
+            url: "https://apz.itch.io/sightreadtrainer",
+        },
+        {
+            title: "Switch - Video Game",
+            description: `This desktop game was developed using the Unity Game Engine in C# and is available on Itch.io. 
+            This game is a classic first person platformer but with a twist. Two dimensions, and you switch between them to complete the levels. 
+            The game was originally designed for speedrunners.`,
+            alter: "Switch - Video Game",
+            image: `${SwitchThumbnail}`,
+            url: "https://apz.itch.io/switch",
+        },
+    ];
 
-  return (
-    <section id="works">
-      <Container component="main" className={classes.main} maxWidth="md">
-        {projects.map((project) => (
-          <div className="project" key={ project.id }>
-            <div className="__img_wrapper">
-              <img src={ project.image } alt={ project.alter }/>
-            </div>
-            <div className="__content_wrapper">
-              <h3 className="title">
-                <TextDecrypt text={ project.id + '. ' + project.title } />
-              </h3>
-              <p className="description">
-                { project.description }
-              </p>
-            </div>
-          </div>
-        ))}
-      </Container>
-    </section>
-  );
+    return (
+        <section id="works">
+            <Container component="main" className={classes.main} maxWidth="md">
+                {projects.map((project, index) => (
+                    <div className="project" key={index}>
+                        <div className="__img_wrapper">
+                            <a href={project.url} target="_blank" rel="noopener noreferrer">
+                                <img src={project.image} alt={project.alter} />
+                            </a>
+                        </div>
+                        <div className="__content_wrapper">
+                            <h3 className="title">
+                                <TextDecrypt text={project.title} />
+                            </h3>
+                            <p className="description">{project.description}</p>
+                        </div>
+                    </div>
+                ))}
+            </Container>
+        </section>
+    );
 };

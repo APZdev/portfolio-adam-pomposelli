@@ -58,12 +58,7 @@ const DisplacementSphere = (props) => {
         renderer.current.setPixelRatio(1);
         renderer.current.outputEncoding = sRGBEncoding;
 
-        camera.current = new PerspectiveCamera(
-            55,
-            width.current / height.current,
-            0.1,
-            200
-        );
+        camera.current = new PerspectiveCamera(55, width.current / height.current, 0.1, 200);
         camera.current.position.z = 52;
 
         scene.current = new Scene();
@@ -83,7 +78,7 @@ const DisplacementSphere = (props) => {
             shader.lights = true;
         };
 
-        geometry.current = new SphereBufferGeometry(32, 128, 128);
+        geometry.current = new SphereBufferGeometry(25, 100, 100);
 
         sphere.current = new Mesh(geometry.current, material.current);
         sphere.current.position.z = 0;
@@ -97,14 +92,8 @@ const DisplacementSphere = (props) => {
     }, []);
 
     useEffect(() => {
-        const dirLight = new DirectionalLight(
-            rgbToThreeColor("250 250 250"),
-            0.6
-        );
-        const ambientLight = new AmbientLight(
-            rgbToThreeColor("250 250 250"),
-            theme === "light" ? 0.8 : 0.1
-        );
+        const dirLight = new DirectionalLight(rgbToThreeColor("250 250 250"), 0.6);
+        const ambientLight = new AmbientLight(rgbToThreeColor("250 250 250"), theme === "light" ? 0.8 : 0.1);
 
         dirLight.position.z = 200;
         dirLight.position.x = 100;
@@ -164,13 +153,7 @@ const DisplacementSphere = (props) => {
             };
 
             if (!sphereSpring.current) {
-                sphereSpring.current = value(rotation.toArray(), (values) =>
-                    rotation.set(
-                        values[0],
-                        values[1],
-                        sphere.current.rotation.z
-                    )
-                );
+                sphereSpring.current = value(rotation.toArray(), (values) => rotation.set(values[0], values[1], sphere.current.rotation.z));
             }
 
             tweenRef.current = spring({
@@ -204,8 +187,7 @@ const DisplacementSphere = (props) => {
             animation = requestAnimationFrame(animate);
 
             if (uniforms.current !== undefined) {
-                uniforms.current.time.value =
-                    0.00005 * (Date.now() - start.current);
+                uniforms.current.time.value = 0.00005 * (Date.now() - start.current);
             }
 
             sphere.current.rotation.z += 0.001;
@@ -226,15 +208,7 @@ const DisplacementSphere = (props) => {
     return (
         <Transition appear in onEnter={reflow} timeout={3000}>
             {(status) => (
-                <canvas
-                    aria-hidden
-                    className={classNames(
-                        "displacement-sphere",
-                        `displacement-sphere--${status}`
-                    )}
-                    ref={canvasRef}
-                    {...props}
-                />
+                <canvas aria-hidden className={classNames("displacement-sphere", `displacement-sphere--${status}`)} ref={canvasRef} {...props} />
             )}
         </Transition>
     );

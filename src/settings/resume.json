@@ -1,59 +1,59 @@
 {
     "basics": {
-        "name": "Mark Tan",
+        "name": "Adam Pomposelli",
         "label": "Web Developer",
-        "email": "markcmtan@gmail.com",
+        "email": "difallahadam2003@gmail.com",
         "phone": "(XXX) XXX-XXXX",
         "picture": "mt.png",
         "x_title": "Hello, I'm",
-        "job1": "Designer",
-        "job2": "Developer",
-        "description": "Hello! I'm Mark! Your web development enthusiast. Always down for something new and challenging! Just like markdown, I'm here to help you create beautifully formatted websites.",
+        "job1": "Web Developer",
+        "job2": "Game Developer",
+        "description": "Hello! I'm Adam! Your web development enthusiast. Always down for something new and challenging! Just like markdown, I'm here to help you create beautifully formatted websites.",
         "summary": "based in Angeles, Philippines.",
-        "keywords": "personal,website,portfolio,template,kit,mark,tan,taniyow,webdev,web,developer,angeles,philippines,react,github,linkedin,google,gitlab,telegram,material,design,ui,webapp,markdown",
-        "url": "https://taniyow.vercel.app/",
+        "keywords": "personal,website,portfolio,template,kit,adam,pomposelli,apzdev,webdev,web,developer,angeles,philippines,react,github,linkedin,google,gitlab,telegram,material,design,ui,webapp,markdown",
+        "url": "https://apz-dev.me/",
         "location": {
             "address": "XX XXXXXstreet",
-            "postalCode": "XXXXX",
-            "city": "Angeles",
-            "country": "Philippines",
-            "countryCode": "PH",
-            "region": "Pampanga"
+            "postalCode": "75000",
+            "city": "Paris",
+            "country": "France",
+            "countryCode": "FR",
+            "region": "Ile-de-France"
         },
         "profiles": [
             {
                 "network": "Google",
-                "username": "markcmtan@gmail.com",
-                "url": "mailto:markcmtan@gmail.com",
+                "username": "difallahadam2003@gmail.com",
+                "url": "mailto:difallahadam2003@gmail.com",
                 "x_icon": "fab fa-google"
             },
             {
                 "network": "LinkedIn",
-                "username": "mcmtan",
-                "url": "https://www.linkedin.com/in/mcmtan/",
+                "username": "Adam Pomposelli",
+                "url": "https://www.linkedin.com/in/adam-pomposelli/",
                 "x_icon": "fab fa-linkedin-in"
             },
             {
                 "network": "GitHub",
-                "username": "taniyow",
-                "url": "https://github.com/taniyow",
+                "username": "APZdev",
+                "url": "https://github.com/APZdev",
                 "x_icon": "fab fa-github"
             },
             {
-                "network": "GitLab",
-                "username": "taniyow",
-                "url": "https://gitlab.com/taniyow",
-                "x_icon": "fab fa-gitlab"
+                "network": "ItchIo",
+                "username": "APZ",
+                "url": "https://apz.itch.io/",
+                "x_icon": "fab fa-itch-io"
             },
             {
                 "network": "Telegram",
-                "username": "marktaniyow",
-                "url": "https://t.me/marktaniyow",
+                "username": "APZ",
+                "url": "https://t.me/APZ",
                 "x_icon": "fab fa-telegram-plane"
             },
             {
                 "network": "Discord",
-                "username": "taniyow#9142",
+                "username": "APZ#6380",
                 "url": "https://discord.com",
                 "x_icon": "fab fa-discord"
             }

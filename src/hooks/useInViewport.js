@@ -1,15 +1,11 @@
 import { useEffect, useState } from "react";
 
-export const useInViewport = (
-    elementRef,
-    unobserveOnIntersect,
-    options = {}
-) => {
+export const useInViewport = (elementRef, unobserveOnIntersect, options = {}) => {
     const [intersect, setIntersect] = useState(false);
     const [isUnobserved, setIsUnobserved] = useState(false);
 
     useEffect(() => {
-        if (!elementRef?.current) return;
+        //if (!elementRef?.current) return;
 
         const observer = new IntersectionObserver(([entry]) => {
             const { isIntersecting, target } = entry;

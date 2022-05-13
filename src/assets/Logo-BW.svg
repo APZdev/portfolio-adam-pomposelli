@@ -1,37 +1,5 @@
-import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
-
-const useStyles = makeStyles((theme) => ({
-    svgHover: {
-        fill: theme.palette.foreground.default,
-
-        "&:hover": {
-            fill: theme.palette.primary.main,
-        },
-        transition: "all 0.5s ease",
-    },
-}));
-
-export const Logo = () => {
-    const classes = useStyles();
-
-    return (
-        <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 600 600"
-            className={classes.svgHover}
-            version="1.0"
-            preserveAspectRatio="xMidYMid meet"
-            id="Layer_1"
-        >
-            {" "}
-            <image
-                id="image0"
-                width="600"
-                height="600"
-                x="0"
-                y="0"
-                href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYCAAAAACbDccAAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="600px" height="600px" viewBox="0 0 600 600" enable-background="new 0 0 600 600" xml:space="preserve">  <image id="image0" width="600" height="600" x="0" y="0"
+    href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYCAAAAACbDccAAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
 AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElN
 RQfmBQ0UDxC3QwKVAACAAElEQVR42lz9WaxuWXImhn0RsdYe/uGMd8rMyszKypqLrCqOzSJFUhTJ
 pnqQmu1uUZZa3VS7DUiwH2z4yTZgQM969GMDth8NA4ZhwDIgCN0tWxLVZLNZxaEqqyqrMrNyuDfv
@@ -2527,8 +2495,5 @@ MufoVrKbBCKz5EN2yl2JoKIOt0F7oxzXvW3XQfgcXFV+001PjnbLluJ221B8lClauX2ea2Y2QhNd
 uZnu1sda1et7wJ2f1Hb6lZv/1zrTjRvrtu/zrAIe/OmvfO/++33ubfGB+jEBZw1w/PHTUM+/Mtw5
 rD7/+iEAdAHArey35O7ijfeO7QC4fLSZ8f8PbORK70AgTzwAAAAldEVYdGRhdGU6Y3JlYXRlADIw
 MjItMDUtMTNUMTc6MTU6MTYrMDM6MDDIPDSZAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIyLTA1LTEz
-VDE3OjE1OjE2KzAzOjAwuWGMJQAAAABJRU5ErkJggg=="
-            />
-        </svg>
-    );
-};
+VDE3OjE1OjE2KzAzOjAwuWGMJQAAAABJRU5ErkJggg==" />
+</svg>

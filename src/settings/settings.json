@@ -1,8 +1,8 @@
 {
-  "colors": {
-    "primary": "#42bcbc",
-    "secondary": "#ec704c",
-    "black": "#111111",
-    "white": "#fafafa"
-  }
+    "colors": {
+        "primary": "#2c8de2",
+        "secondary": "#a00c0a",
+        "black": "#111111",
+        "white": "#fafafa"
+    }
 }
