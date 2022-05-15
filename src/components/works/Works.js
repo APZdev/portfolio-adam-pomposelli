@@ -60,7 +60,7 @@ export const Works = () => {
             This clone is fully responsive. I took advantage of Trading View Widgets to render charts and Google Services to provide an authentication method.`,
             alter: "Binance Clone - Clone",
             image: `${BinanceCloneThumbnail}`,
-            url: "https://www.binance.com/en",
+            url: "https://binance-clone-react.vercel.app/",
         },
         {
             title: "Tropical Interior - E-commerce",
