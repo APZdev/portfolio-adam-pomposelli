@@ -88,11 +88,11 @@ export const Works = () => {
         },
         {
             title: "Sight Reading Trainer - Mobile Application",
-            description: `This mobile educational application was developed using the Unity Game Engine in C# and is available exclusively for Android users on Itch.io. 
+            description: `This mobile educational application was developed using the Unity Game Engine in C# and is available exclusively for Android users on the Google Play store. 
             You might be interesed to use this app if you want to improve your sightreading speed when reading music scores.`,
             alter: "Sight Reading Trainer - Mobile Application",
             image: `${SightReadTrainerThumbnail}`,
-            url: "https://apz.itch.io/sightreadtrainer",
+            url: "https://play.google.com/store/apps/details?id=com.SubwayGames.SightReadTrainer",
         },
         {
             title: "Switch - Video Game",
